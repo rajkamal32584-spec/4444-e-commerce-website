@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - 4444</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body class="font-inter bg-gray-50">
+    <nav class="bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-indigo-600">4444</a>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-gray-800 hover:text-indigo-600">Home</a>
+                    <a href="cart.html" class="text-gray-800 hover:text-indigo-600 flex items-center">
+                        <i data-lucide="shopping-cart" class="w-5 h-5 mr-1"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto py-8 px-4">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="p-6 border-b">
+                <h1 class="text-2xl font-bold text-gray-900">Order Confirmation</h1>
+            </div>
+            
+            <div class="p-6">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="bg-green-100 rounded-full p-3">
+                        <i data-lucide="check-circle" class="w-12 h-12 text-green-600"></i>
+                    </div>
+                </div>
+                
+                <div class="text-center mb-8">
+                    <h2 class="text-xl font-semibold mb-2">Thank you for your order!</h2>
+                    <p class="text-gray-600">Your order has been placed successfully.</p>
+                    <p class="text-gray-600">Order ID: <span id="order-id" class="font-medium">#ORD123456</span></p>
+                </div>
+                
+                <div class="mb-8">
+                    <h3 class="font-semibold text-lg mb-4">Order Summary</h3>
+                    <div id="order-summary-items" class="mb-4">
+                        <!-- Order items will be loaded here -->
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Subtotal</span>
+                            <span id="order-subtotal" class="font-medium">₹0</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Shipping</span>
+                            <span class="font-medium">₹50</span>
+                        </div>
+                        <div class="flex justify-between font-bold text-lg">
+                            <span>Total</span>
+                            <span id="order-total">₹50</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <h3 class="font-semibold text-lg mb-4">Shipping Address</h3>
+                    <div id="shipping-address" class="text-gray-600">
+                        <!-- Address will be loaded here -->
+                    </div>
+                </div>
+                
+                <a href="index.html" class="block w-full bg-indigo-600 text-white text-center py-3 rounded-md hover:bg-indigo-700 transition font-medium">Continue Shopping</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold mb-4">4444</h2>
+                <p class="text-gray-400">© 2023 4444. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<script>(function(){var f=function(){if(window.lucide)window.lucide.createIcons();};if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",f);else f();})();</script>
+</body>
+</html>
